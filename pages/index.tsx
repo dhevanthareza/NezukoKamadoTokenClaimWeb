@@ -16,7 +16,7 @@ import styles from "../styles/Home.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 const Home = () => {
-  const tokenAddress = "0x03728725240b021887355c943d040BF933F3d5F0";
+  const tokenAddress = "0x4C2B74733a27B4DB3b1BC1c4c6a3789E8A5F3901";
   const { contract } = useContract(tokenAddress, "token-drop");
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -234,7 +234,7 @@ const Home = () => {
             />
           )}
 
-          <h2 className={styles.title}>Claim Tokens</h2>
+          <h2 className={styles.title}>Claim Nezuko Kamado Tokens</h2>
           <p className={styles.explain}>
             Claim ERC20 tokens from{" "}
             <span className={styles.pink}>{contractMetadata?.name}</span>
